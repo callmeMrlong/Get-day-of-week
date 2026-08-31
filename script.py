@@ -34,7 +34,7 @@ all_dates = generate_date_list()
 
 
 def build():
-    with open("dates_output", "w") as file:
+    with open("dates_output.py", "w") as file:
         file.write('date = input("pick any date in MM/DD/YYYY format and find out what day of the week it was")')
         for i in all_dates:
             file.write(f"if date == '{i}': print('{get_day(i)}')\n")
